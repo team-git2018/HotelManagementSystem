@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="css/HomeStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/Home.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <ul class="main-nav">
+          <a href="HomePage.html"><li style="color: rgb(238, 152, 13);">Home</li></a>
+          <a href="FoodPage.html"><li>Food</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>About Us</li></a>
+        </ul>
+        <button class="loginRegister" id="loginbtn" type="button" name="login" onclick="login()">Login</button>
+        <button class="loginRegister" id="registerbtn" type="button" name="signup" onclick="register()">Register</button>
+      </div>
+    </header>
+      <form class="form1" name="form1" method="post" action="Signup">
+        <input id="firstName" type="text" name="firstName" placeholder="First Name" required>
+        <input id="lastName" type="text" name="lastName" placeholder="Last Name" required>
+        <input id="email" type="text" name="Email" placeholder="Email" required>
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        <button id="formbtn" type="submit" name="submitbtn">SignUp</button>
+      </form>
+      <form class="form2" name="form2" method="post" action="Login">
+        <input id="emailLogin" type="text" name="Email" placeholder="Email" required>
+        <input id="passwordLogin" type="password" name="password" placeholder="Password" required>
+        <button id="formbtn" type="submit" name="loginbtn">Login</button>
+      </form>
+      <div class="logo">
+      </div>
+      <h1>Find your Freedom!</h1>
+  </body>
+</html>
